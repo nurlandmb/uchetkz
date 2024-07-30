@@ -26,7 +26,7 @@ export default {
   props: ['product'],
   computed: {
     ...mapGetters({
-      cartItems: 'cart.js/getItems'
+      cartItems: 'cart/getItems'
     }),
 
     productId() {
@@ -48,9 +48,9 @@ export default {
   },
   methods: {
     ...mapMutations({
-      cartAddItem: 'cart.js/addItem',
-      cartRemoveItem: 'cart.js/removeItem',
-      cartQuantityChange: 'cart.js/changeItemQuantity'
+      cartAddItem: 'cart/addItem',
+      cartRemoveItem: 'cart/removeItem',
+      cartQuantityChange: 'cart/changeItemQuantity'
     }),
     addToCartHandler(product) {
       this.cartAddItem({

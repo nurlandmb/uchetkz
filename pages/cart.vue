@@ -29,9 +29,9 @@ export default Vue.extend({
   layout: 'base',
   computed: {
     ...mapGetters({
-      cartItems: 'cart.js/getItems',
-      cartTotalQuantity: 'cart.js/getTotalQuantity',
-      cartTotalPrice: 'cart.js/getTotalPrice'
+      cartItems: 'cart/getItems',
+      cartTotalQuantity: 'cart/getTotalQuantity',
+      cartTotalPrice: 'cart/getTotalPrice'
     })
   }
 })

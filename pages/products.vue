@@ -40,19 +40,19 @@ export default Vue.extend({
       return this.$store.state.products.products
     },
     ...mapGetters({
-      categories: 'products.js/getAvailableCategories',
-      filteredProducts: 'products.js/getFilteredProducts',
-      productsIsLoading: 'products.js/getIsLoading',
+      categories: 'products/getAvailableCategories',
+      filteredProducts: 'products/getFilteredProducts',
+      productsIsLoading: 'products/getIsLoading',
     }),
   },
   methods: {
     ...mapActions({
-      fetchProducts: 'products.js/fetchProducts'
+      fetchProducts: 'products/fetchProducts'
     }),
     ...mapMutations({
-      setSearchValue: 'products.js/setSearchValue',
-      setSelectedCategory: 'products.js/setSelectedCategory',
-      setOrderBy: 'products.js/setOrderBy'
+      setSearchValue: 'products/setSearchValue',
+      setSelectedCategory: 'products/setSelectedCategory',
+      setOrderBy: 'products/setOrderBy'
     })
 
   },

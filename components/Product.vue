@@ -29,8 +29,8 @@ export default {
   props: ['product'],
   computed: {
     ...mapGetters({
-      cartItems: 'cart.js/getItems',
-      favoriteItems: 'favorites.gs/getItems'
+      cartItems: 'cart/getItems',
+      favoriteItems: 'favorites/getItems'
     }),
 
     productId(){
@@ -52,11 +52,11 @@ export default {
   },
   methods: {
     ...mapMutations({
-      cartAddItem: 'cart.js/addItem',
-      cartRemoveItem: 'cart.js/removeItem',
-      cartQuantityChange: 'cart.js/changeItemQuantity',
-      favoritesAddItem: 'favorites.gs/addItem',
-      favoritesRemoveItem: 'favorites.gs/removeItem'
+      cartAddItem: 'cart/addItem',
+      cartRemoveItem: 'cart/removeItem',
+      cartQuantityChange: 'cart/changeItemQuantity',
+      favoritesAddItem: 'favorites/addItem',
+      favoritesRemoveItem: 'favorites/removeItem'
     }),
     addToCartHandler(product){
       this.cartAddItem({
