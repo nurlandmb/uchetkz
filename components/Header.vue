@@ -30,7 +30,7 @@ export default {
   name: 'Header',
   computed: {
     ...mapGetters({
-      cartTotalQuantity: "cart/getTotalQuantity"
+      cartTotalQuantity: "cart.js/getTotalQuantity"
     })
   }
 }

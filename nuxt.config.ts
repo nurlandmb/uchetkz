@@ -24,8 +24,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/axios.ts',
-    { src: '~/plugins/vuex-persist.ts', mode: 'client' },
+    '~/plugins/axios.js',
+    { src: '~/plugins/vuex-persist.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,6 +39,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/axios'],
+
+  target: 'static',
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

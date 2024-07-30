@@ -19,14 +19,14 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import {mapGetters, mapMutations} from 'vuex';
 
 export default {
   props: ['product'],
   computed: {
     ...mapGetters({
-      cartItems: 'cart/getItems'
+      cartItems: 'cart.js/getItems'
     }),
 
     productId() {
@@ -34,7 +34,7 @@ export default {
     },
 
     inCartQuantity() {
-      return this.cartItem?.quantity;
+      return this.cartItem.quantity;
 
     },
 
@@ -48,9 +48,9 @@ export default {
   },
   methods: {
     ...mapMutations({
-      cartAddItem: 'cart/addItem',
-      cartRemoveItem: 'cart/removeItem',
-      cartQuantityChange: 'cart/changeItemQuantity'
+      cartAddItem: 'cart.js/addItem',
+      cartRemoveItem: 'cart.js/removeItem',
+      cartQuantityChange: 'cart.js/changeItemQuantity'
     }),
     addToCartHandler(product) {
       this.cartAddItem({

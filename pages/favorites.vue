@@ -22,7 +22,7 @@ export default Vue.extend({
   layout: 'base',
   computed: {
     ...mapGetters({
-      favoriteItems: 'favorites/getItems',
+      favoriteItems: 'favorites.gs/getItems',
     })
   }
 })
