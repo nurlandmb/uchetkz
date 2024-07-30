@@ -43,7 +43,7 @@ export default {
   target: 'static',
 
   router: {
-    base: '/uchetkz/'
+    base: '/uchetkz/dist/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
